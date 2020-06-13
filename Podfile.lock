@@ -1,0 +1,24 @@
+PODS:
+  - PayUIndia-Custom-Browser (5.9)
+  - PayUmoney_CoreSDK (4.0):
+    - PayUIndia-Custom-Browser (~> 5.9)
+  - PayUmoney_PnP (2.5.2):
+    - PayUmoney_CoreSDK
+
+DEPENDENCIES:
+  - PayUmoney_PnP
+
+SPEC REPOS:
+  trunk:
+    - PayUIndia-Custom-Browser
+    - PayUmoney_CoreSDK
+    - PayUmoney_PnP
+
+SPEC CHECKSUMS:
+  PayUIndia-Custom-Browser: 2d7f2286cbf49374b15d8d1d8501f668e25d43a4
+  PayUmoney_CoreSDK: 7359e473a7862c8894620fcf9bd934dfe0d4c381
+  PayUmoney_PnP: 322171ad495ee6d925bdbc013feced0b77433ad9
+
+PODFILE CHECKSUM: 5e1127bf015b8ff5a99a27a5f98d98e30f47d822
+
+COCOAPODS: 1.9.2

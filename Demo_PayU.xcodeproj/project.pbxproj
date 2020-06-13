@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1029E392038594A502A8E662 /* Pods_Demo_PayU.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D340C4C733430486486020D /* Pods_Demo_PayU.framework */; };
 		DCA700752491C5C1004CC521 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA700742491C5C1004CC521 /* AppDelegate.swift */; };
 		DCA700772491C5C1004CC521 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA700762491C5C1004CC521 /* SceneDelegate.swift */; };
 		DCA700792491C5C1004CC521 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA700782491C5C1004CC521 /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17E61EC0B294E28421ADD221 /* Pods-Demo_PayU.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo_PayU.debug.xcconfig"; path = "Target Support Files/Pods-Demo_PayU/Pods-Demo_PayU.debug.xcconfig"; sourceTree = "<group>"; };
+		5D340C4C733430486486020D /* Pods_Demo_PayU.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo_PayU.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6938011551A18C607F934D96 /* Pods-Demo_PayU.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo_PayU.release.xcconfig"; path = "Target Support Files/Pods-Demo_PayU/Pods-Demo_PayU.release.xcconfig"; sourceTree = "<group>"; };
 		DCA700712491C5C1004CC521 /* Demo_PayU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo_PayU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCA700742491C5C1004CC521 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCA700762491C5C1004CC521 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1029E392038594A502A8E662 /* Pods_Demo_PayU.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2795411B3B55DF5847C2E0D6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				17E61EC0B294E28421ADD221 /* Pods-Demo_PayU.debug.xcconfig */,
+				6938011551A18C607F934D96 /* Pods-Demo_PayU.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C6F0F85BB1357C5DAD79822B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D340C4C733430486486020D /* Pods_Demo_PayU.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DCA700682491C5C1004CC521 = {
 			isa = PBXGroup;
 			children = (
 				DCA700732491C5C1004CC521 /* Demo_PayU */,
 				DCA700722491C5C1004CC521 /* Products */,
+				2795411B3B55DF5847C2E0D6 /* Pods */,
+				C6F0F85BB1357C5DAD79822B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DCA700852491C5C3004CC521 /* Build configuration list for PBXNativeTarget "Demo_PayU" */;
 			buildPhases = (
+				7F13ACFA0DE308AC43BE7370 /* [CP] Check Pods Manifest.lock */,
 				DCA7006D2491C5C1004CC521 /* Sources */,
 				DCA7006E2491C5C1004CC521 /* Frameworks */,
 				DCA7006F2491C5C1004CC521 /* Resources */,
+				2C8DA2BB42767BDAE86A78D8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2C8DA2BB42767BDAE86A78D8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Demo_PayU/Pods-Demo_PayU-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Demo_PayU/Pods-Demo_PayU-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Demo_PayU/Pods-Demo_PayU-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F13ACFA0DE308AC43BE7370 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Demo_PayU-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DCA7006D2491C5C1004CC521 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		DCA700862491C5C3004CC521 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17E61EC0B294E28421ADD221 /* Pods-Demo_PayU.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +370,7 @@
 		};
 		DCA700872491C5C3004CC521 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6938011551A18C607F934D96 /* Pods-Demo_PayU.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-Demo_PayU/Pods-Demo_PayU-frameworks.sh
+${PODS_ROOT}/PayUIndia-Custom-Browser/PayUCustomBrowser.framework
+${PODS_ROOT}/PayUmoney_CoreSDK/CoreSDK/PayUMoneyCoreSDK.framework
+${PODS_ROOT}/PayUmoney_PnP/PlugNPlay/PlugNPlay.framework
